@@ -1,0 +1,13 @@
+{
+	"name": "Bonus Plus ",
+	"uri": "https://github.com/ihlassovbetov/q2a-bonusplus",
+	"description": "Customizes Bonus Point system",
+	"version": "1.0",
+	"date": "2018-08-03",
+	"author": "Yhlas Sovbetov",
+	"author_uri": "https://github.com/ihlassovbetov",
+	"update_uri": "https://raw.github.com/ihlassovbetov/q2a-bonusplus/qa-plugin.php",
+	"license": "GPLv2",
+	"min_q2a": "1.7.4",
+	"load_order": "after_db_init"
+}
