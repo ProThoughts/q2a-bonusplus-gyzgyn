@@ -11,7 +11,7 @@ class qa_html_theme_layer extends qa_html_theme_base
 	{
 		qa_html_theme_base::head_script();
 		
-		if(qa_is_logged_in() && $this->template=='user')
+		if(qa_is_logged_in() && $this->template=='user' && qa_get_logged_in_level() >= qa_opt('bonusplus_bonuser_level'))
 		{
 			$this->output('
 				<script>
@@ -33,7 +33,7 @@ class qa_html_theme_layer extends qa_html_theme_base
 	{
 		parent::head_custom();
 		$hidecss = qa_opt('bonusplus_exclude_css') === '1';
-		if ( !$hidecss )
+		if ( !$hidecss && $this->template=="user" && qa_get_logged_in_level() >= qa_opt('bonuser_level'))
 		{
 			$bonuspluss_css = '
 				<style>
