@@ -112,7 +112,7 @@ class qa_html_theme_layer extends qa_html_theme_base
 	
 	public function form_button_data($button, $key, $style) {
 		
-		if ($button['tags'] == 'name="dosetbonus"') {
+		if (isset($button['tags']) && $button['tags'] == 'name="dosetbonus"') {
 			$button['tags']='name="sendbonus" id="hide_button"';
 		}
 		
