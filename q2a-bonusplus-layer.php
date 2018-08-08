@@ -129,7 +129,7 @@ class qa_html_theme_layer extends qa_html_theme_base
 	
 	public function form_note($field, $style, $columns)
 	{
-		if ($field['note'] == qa_lang_html('users/only_shown_admins')) {
+		if ($field['id'] == 'bonus') {
 			$field['note'] ='<button name="givebonusplus" value="givebonus" title="'.qa_lang('q2a_bonusplus_lang/give_bonus').'" type="submit" class="qa-form-wide-button qa-form-wide-button-givebonusplus" data-bonuserid="'.qa_get_logged_in_userid().'" data-receiverid="'.qa_handle_to_userid(qa_request_part(1)).'"><span>'.qa_lang('q2a_bonusplus_lang/give_bonus').'</span></button>';
 		}
 		qa_html_theme_base::form_note($field, $style, $columns);
