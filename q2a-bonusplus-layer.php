@@ -149,7 +149,7 @@ class qa_html_theme_layer extends qa_html_theme_base
 						</h4>
 						<div class="bonus_amount">
 							<span>'.qa_lang('q2a_bonusplus_lang/bonus_amount').'</span><br/>
-							<input type="number" name="amount" min="'.qa_opt('q2a_min_bonus_amount').'" max="'.qa_opt('q2a_max_bonus_amount').'">
+							<input type="number" name="amount" min="'.qa_opt('bonusplus_min_amount').'" max="'.qa_opt('bonusplus_max_amount').'">
 						</div>
 						<div class="cep">
 							<input type="radio" name="qa-bonus-reason" value="1" checked>
